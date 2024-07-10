@@ -9,3 +9,15 @@ body {
   max-width: 464px;
   overflow-x: hidden;
 }
+
+.MuiCardContent-root {
+  padding: 0 !important;
+}
+
+.MuiCardContent-root:last-child {
+  padding-bottom: 0 !important;
+}
+
+.MuiCard-root {
+  box-shadow: none !important;
+}

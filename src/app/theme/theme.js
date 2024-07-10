@@ -18,6 +18,7 @@ const theme = createTheme({
       main: Colors.primary,
       text: Colors.text,
       white: Colors.white,
+      selected: Colors.selected,
       gray: Colors.gray,
       lightGray: Colors.lightGray,
       blue: Colors.blue,

@@ -1,5 +1,6 @@
 import { Container, Typography, Box } from '@mui/material'
 import Image from 'next/image'
+import PaymentCard from './component/PaymentCard'
 
 export default function Home() {
   return (
@@ -18,10 +19,12 @@ export default function Home() {
           fontWeight: 800,
           textAlign: 'center',
           fontSize: 24,
+          marginBottom: '32px',
         }}
       >
         João, como você quer pagar?
       </Typography>
+      <PaymentCard />
     </Container>
   )
 }

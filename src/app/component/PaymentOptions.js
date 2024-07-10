@@ -137,8 +137,8 @@ const PaymentCard = ({
   )
 }
 
-const PaymentOptions = () => {
-  const [selectedOption, setSelectedOption] = useState(1)
+const PaymentOptions = (props) => {
+  const [selectedOption, setSelectedOption] = useState(0)
 
   const options = [
     {
@@ -186,7 +186,7 @@ const PaymentOptions = () => {
   ]
 
   return (
-    <Box>
+    <Box {...props}>
       {options.map((option, index) => (
         <PaymentCard
           key={option.id}

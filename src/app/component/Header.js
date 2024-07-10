@@ -21,7 +21,9 @@ const Header = (props) => {
           marginBottom: '32px',
         }}
       >
-        {props.client}, como você quer pagar?
+        {props.client}
+        {', '}
+        {props.message}
       </Typography>
     </>
   )

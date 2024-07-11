@@ -22,3 +22,19 @@ body {
   box-shadow: none !important;
   margin: 0 !important;
 }
+
+.MuiAccordion-root {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+
+.MuiAccordionSummary-root {
+  margin: 0 !important;
+  padding: 5px 0 !important;
+}
+
+.MuiAccordionDetails-root {
+  margin: 0 !important;
+  padding: 10px 0 !important;
+}

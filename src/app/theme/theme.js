@@ -22,6 +22,7 @@ const theme = createTheme({
       gray: Colors.gray,
       lightGray: Colors.lightGray,
       blue: Colors.blue,
+      darkBlue: Colors.darkBlue,
     },
   },
 })

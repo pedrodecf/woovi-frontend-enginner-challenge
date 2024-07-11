@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Woovi Frontend Engineer Challenge
 
-## Getting Started
+## Descrição do Projeto
 
-First, run the development server:
+Este projeto é uma solução para o desafio proposto pela Woovi. O objetivo é desenvolver uma réplica do design fornecido [aqui.](https://www.figma.com/file/hv1LgD7oNrtlmfWgKBG6PF/Woovi-Desafio-Front?node-id=1%3A100)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Deploy
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+O projeto está implantado e pode ser acessado [aqui](https://woovi-frontend-enginner-challenge.vercel.app/).
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Prints da Aplicação
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+<table>
+  <tr>
+    <td><img src="https://github.com/pedrodecf/woovi-frontend-enginner-challenge/assets/43791636/e776011f-68f8-4493-ae19-d5915b51bec0" alt="localhost_3000_payment-step-one (1)" width="100%"/></td>
+    <td><img src="https://github.com/pedrodecf/woovi-frontend-enginner-challenge/assets/43791636/598c186f-32a0-4172-ba64-c7c99373987a" alt="localhost_3000_payment-step-one (2)" width="100%"/></td>
+    <td><img src="https://github.com/pedrodecf/woovi-frontend-enginner-challenge/assets/43791636/f001d0f0-e37c-4285-8e7c-65afa429f789" alt="localhost_3000_payment-step-one" width="100%"/></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/pedrodecf/woovi-frontend-enginner-challenge/assets/43791636/ff3a9760-9371-4107-ae17-b7dc64affb35" alt="localhost_3000_payment-step-one (3)" width="100%"/></td>
+    <td><img src="https://github.com/pedrodecf/woovi-frontend-enginner-challenge/assets/43791636/0079c75a-0aab-4ab6-aa01-edb4f2aa7801" alt="localhost_3000_payment-step-one (4)" width="100%"/></td>
+  </tr>
+</table>
 
-## Learn More
+## Tecnologias Utilizadas
 
-To learn more about Next.js, take a look at the following resources:
+- **React**
+- **Next.js** (versão 14.2.5)
+- **Material-UI (MUI)**
+- **React Hook Form**
+- **Zod**
+- **Framer Motion**
+- **QRCode**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Configuração e Execução
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Pré-requisitos
 
-## Deploy on Vercel
+- Docker
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Passos para Configuração
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Clone o repositório:
+
+   ```bash
+   git clone https://github.com/pedrodecf/woovi-frontend-enginner-challenge.git
+   cd woovi-frontend-enginner-challenge
+   ```
+
+2. Execute o projeto com Docker Compose:
+
+   ```bash
+   docker-compose up --build
+   ```
+
+3. Acesse o projeto no navegador em:
+
+   ```
+   http://localhost:3000
+   ```
+
+## Funcionalidades Implementadas
+
+- **Abordagem Mobile First**: O design foi desenvolvido priorizando a experiência em dispositivos móveis.
+- **Componentização com MUI**: Utilização do Material-UI para componentes reutilizáveis e estilização consistente.
+- **Formulários com React Hook Form**: Implementação de formulários com validação utilizando React Hook Form e Zod.
+- **Animações com Framer Motion**: Uso de Framer Motion para animações fluidas e interativas.
+
+## Contato
+
+Para mais informações, entre em contato:
+
+| [<img src="https://github.com/pedrodecf.png" width=115><br><sub>@pedrodecf</sub>](https://github.com/pedrodecf) |
+| :---: |
+
+- [LinkedIn](https://www.linkedin.com/in/pedro-freitas)

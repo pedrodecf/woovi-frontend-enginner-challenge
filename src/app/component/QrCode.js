@@ -1,8 +1,21 @@
+'use client'
+import { useState } from 'react'
 import FileCopyIcon from '@mui/icons-material/FileCopy'
-import { Box, Button, Typography } from '@mui/material'
-import Image from 'next/image'
+import { Box, Button, Typography, Snackbar, Alert } from '@mui/material'
+import QRCodeGenerator from '../utils/QrCodeGenerator'
+import generateAndCopyRandomString from '../utils/GenerateRandomString'
 
 const QrCode = () => {
+  const [open, setOpen] = useState(false)
+  const [message, setMessage] = useState('')
+
+  const handleClose = (event, reason) => {
+    if (reason === 'clickaway') {
+      return
+    }
+    setOpen(false)
+  }
+
   return (
     <>
       <Box
@@ -11,13 +24,13 @@ const QrCode = () => {
         justifyContent="center"
         margin="0 auto"
         sx={{
-          width: '350px',
-          height: '350px',
+          maxWidth: '350px',
+          maxHeight: '350px',
           borderRadius: '10px',
           border: '2px solid #03D69D',
         }}
       >
-        <Image src="/qrcode.png" alt="QR Code" height="332" width="332" />
+        <QRCodeGenerator />
       </Box>
       <Button
         sx={{
@@ -29,9 +42,13 @@ const QrCode = () => {
           gap: 1,
           width: 'fit-content',
           margin: '27px auto 0',
+          textTransform: 'none',
           '&:hover': {
             backgroundColor: 'primary.darkBlue',
           },
+        }}
+        onClick={() => {
+          generateAndCopyRandomString(setOpen, setMessage)
         }}
       >
         <Typography
@@ -46,6 +63,11 @@ const QrCode = () => {
         </Typography>
         <FileCopyIcon sx={{ color: 'primary.white' }} />
       </Button>
+      <Snackbar open={open} autoHideDuration={3000} onClose={handleClose}>
+        <Alert onClose={handleClose} severity="success">
+          {message}
+        </Alert>
+      </Snackbar>
     </>
   )
 }

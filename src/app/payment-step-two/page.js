@@ -4,9 +4,9 @@ import Footer from '../component/Footer'
 import PaymentSteps from '../component/PaymentSteps'
 import PaymentCet from '../component/PaymentCet'
 import PaymentTerm from '../component/PaymentTerm'
-import QrCode from '../component/QrCode'
 import HowItWorks from '../component/HowItWorks'
 import Identifier from '../component/Identifier'
+import PaymentForm from '../component/PaymentForm'
 
 export default function Home() {
   return (
@@ -14,12 +14,11 @@ export default function Home() {
       <Header
         client="João"
         message="pague a entrada de R$15.300,00 pelo Pix"
-        previousPageLink="/"
-        nextPageLink="/payment-step-two"
+        previousPageLink="/payment-step-one"
       />
-      <QrCode />
+      <PaymentForm />
       <PaymentTerm date="15/12/2021 - 08:17" />
-      <PaymentSteps step="one" />
+      <PaymentSteps step="two" />
       <Divider sx={{ my: 0 }} />
       <PaymentCet cet="0,5" value="30.600,00" />
       <Divider sx={{ my: 0 }} />

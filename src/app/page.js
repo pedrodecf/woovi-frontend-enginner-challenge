@@ -7,7 +7,11 @@ import Header from './component/Header'
 export default function Home() {
   return (
     <Container>
-      <Header client="João" />
+      <Header
+        client="João"
+        message="como você quer pagar?"
+        nextPageLink="/payment-step-one"
+      />
       <PaymentCard />
       <PaymentOptions sx={{ marginTop: '36px' }} />
       <Footer />

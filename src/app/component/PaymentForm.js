@@ -84,7 +84,14 @@ const PaymentForm = () => {
         error={!!errors.installments}
         helperText={errors.installments?.message}
       >
-        <MenuItem value="1x de R$ 15.300,00">1x de R$ 15.300,00</MenuItem>
+        <MenuItem
+          value="1x de R$ 15.300,00"
+          sx={{
+            maxWidth: '90%',
+          }}
+        >
+          1x de R$ 15.300,00
+        </MenuItem>
       </TextField>
       <Button
         type="submit"

@@ -8,6 +8,7 @@ html,
 body {
   max-width: 464px;
   overflow-x: hidden;
+  padding-right: 0 !important;
 }
 
 .MuiCardContent-root {
@@ -38,8 +39,3 @@ body {
   margin: 0 !important;
   padding: 10px 0 !important;
 }
-
-/* .MuiContainer-root {
-  padding: 0 !important;
-  margin: 0 !important;
-} */
